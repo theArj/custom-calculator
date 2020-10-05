@@ -72,28 +72,42 @@ p {
   color: yellow;
 }
 
-#jam{
-    font-size: 20px;
-    padding: auto; 
+#jam {
+  font-size: 20px;
+  padding: auto;
 }
 
-#strings{
-    font-size: 20px;
-    padding: auto;
+#jam:focus {
+  background: grey;
 }
 
-#frets{
-    font-size: 20px;
-    padding: auto;
+#strings {
+  font-size: 20px;
+  padding: auto;
 }
 
-button{
-    width: auto;
-    height: auto;
-    /* color: yellow; */
-    font-size: 30px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin: auto;
-    display: block;
-    text-transform: uppercase;
+#strings:focus {
+    background: grey;
+}
+
+#frets {
+  font-size: 20px;
+  padding: auto;
+}
+
+#frets:focus {
+    background: grey;
+}
+
+button {
+  width: auto;
+  height: auto;
+  background-color: red;
+  border-radius: 10px;
+  /* color: yellow; */
+  font-size: 30px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin: auto;
+  display: block;
+  text-transform: uppercase;
 }
