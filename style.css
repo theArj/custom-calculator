@@ -1,0 +1,30 @@
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  /* Use background Strat image here: photo by Arjun Ramesh, copyright 2020 Arjun Ramesh. */
+  background-image: url("images/Strat.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#container {
+  width: 550px;
+  height: 500px;
+  background: transparent;
+  /* background: #f7f7f7; */
+  border-radius: 20px;
+  padding: 20px;
+}
+
+h1 {
+  color: white;
+}
+
+h2 {
+  color: white;
+}
+
+h3 {
+  color: white;
+}
