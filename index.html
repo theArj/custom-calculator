@@ -1,28 +1,41 @@
-<!DOCTYPE html lang=en>
-<html>
+<!DOCTYPE html>
+<html class="html" lang="en-US">
   <head>
+    <!-- Meta tags here. -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Title here. -->
     <title>Don't Fret: Fretboard Calculator</title>
+    <!-- Link to style.css here. -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
   </head>
   <body>
+    <!-- "Dont Fret" header 1 here. -->
     <h1>Don't Fret</h1>
+    <!-- Header 2 here. -->
     <h2>Guitar and Bass Fretboard Calculator</h2>
+    <!-- Explain what this calculator does here in header 3. -->
     <h3>
-      Find out how many notes your guitar or bass is capable of producing based
-      on its number of strings and frets!
+      Find out how many musical notes your guitar or bass is capable of
+      producing based on its number of strings and frets!
     </h3>
 
-    <p>What do you like to play?</p>
+    <!-- Style of music drop-down options here. Based on the style of music user chooses, the 
+        number of strings and frets should update to reflect that style. -->
+    <p>What style of music do you like to play?</p>
     <select>
+      <!-- Classical music uses 4-string basses and 6-string guitars. -->
       <option value="1">Classical</option>
+      <!-- Blues/Rock uses 4-, 5-, and 6-string basses and 6- and 12-string guitars. -->
       <option value="2">Blues/Rock</option>
+      <!-- Metal uses 4-, 5-, and 6-string basses and 6- and 7-string guitars. -->
       <option value="3">Metal</option>
+      <!-- Jazz uses 4-, 5-, and 6-string basses and 6-string guitars. -->
       <option value="4">Jazz</option>
     </select>
 
+    <!-- Number of strings drop-down options here. -->
     <p>Number of strings on your guitar or bass:</p>
     <select>
       <option value="4">4-String Bass</option>
@@ -32,6 +45,7 @@
       <option value="12">12-String Guitar</option>
     </select>
 
+    <!-- Number of frets drop-down options here. -->
     <p>Number of frets:</p>
     <select>
       <option value="19">19 Frets</option>
@@ -41,6 +55,7 @@
       <option value="24">24 Frets</option>
     </select>
   </body>
+  <!-- Add script tag here. -->
   <script>
     src = "script.js";
   </script>
