@@ -10,11 +10,32 @@ body {
   font-size: larger;
 }
 
-#container {
-  width: 550px;
-  height: 500px;
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  height: 400px;
+  justify-content: space-between;
+}
+
+#title_container {
+  width: 600px;
+  height: 200 px;
   background: transparent;
   /* background: #f7f7f7; */
+  flex-direction: row;
+  align-items: flex-start;
+  border-radius: 20px;
+  padding: 20px;
+  /* margin: auto; */
+}
+
+#input_container {
+  width: 550px;
+  height: 400px;
+  background: transparent;
+  /* background: #f7f7f7; */
+  flex-direction: row;
+  align-items: flex-end;
   border-radius: 20px;
   padding: 20px;
   /* margin: auto; */
@@ -25,13 +46,28 @@ h1 {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 50px;
+  align-items: center;
+  text-align: center;
 }
 
 h2 {
-  color: #e0e247;
+  color: #2344da;
   font-size: 40 px;
+  align-items: center;
+  text-align: center;
 }
 
 h3 {
   color: white;
+  text-align: justify;
+}
+
+h4 {
+  color: red;
+  text-align: center;
+  align-items: center;
+}
+
+p {
+  color: yellow;
 }
