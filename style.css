@@ -87,7 +87,7 @@ p {
 }
 
 #strings:focus {
-    background: grey;
+  background: grey;
 }
 
 #frets {
@@ -96,7 +96,7 @@ p {
 }
 
 #frets:focus {
-    background: grey;
+  background: grey;
 }
 
 button {
@@ -110,4 +110,20 @@ button {
   margin: auto;
   display: block;
   text-transform: uppercase;
+}
+
+#total_notes {
+  font-size: 25px;
+  padding: auto;
+  text-align: center;
+  color: yellow;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+#total_notes:before{
+    content: "Total Number of Notes: ";
+    font-size: 25px;
+    display: block;
 }

@@ -19,64 +19,70 @@
         <h2>Guitar and Bass Fretboard Calculator</h2>
         <h4>Genres:</h4>
         <p>
-            Blues/Rock: uses 4-, 5-, and 6-string basses and 6- and 12-string guitars.
-            <br>
-            <br>
-            Metal: uses 4-, 5-, and 6-string basses and 6- and 7-string guitars.
-            <br>
-            <br>
-            Jazz: uses 4-, 5-, and 6-string basses and 6-string guitars.
-            <br>
-            <br>
-            Classical: uses 4-string basses and 6-string guitars.
+          Blues/Rock: uses 4-, 5-, and 6-string basses and 6- and 12-string
+          guitars.
+          <br />
+          <br />
+          Metal: uses 4-, 5-, and 6-string basses and 6- and 7-string guitars.
+          <br />
+          <br />
+          Jazz: uses 4-, 5-, and 6-string basses and 6-string guitars.
+          <br />
+          <br />
+          Classical: uses 4-string basses and 6-string guitars.
         </p>
       </div>
-      <div id="input_container">
-        <!-- Explain what this calculator does here in header 3. -->
-        <h3>
-          Let's see how many musical notes you can rock on your axe! Choose your
-          jam, number of strings, and the number of frets, and I'll let you
-          know!
-        </h3>
+      <div id="calculator">
+        <div id="input_container">
+          <!-- Explain what this calculator does here in header 3. -->
+          <h3>
+            Let's see how many musical notes you can rock on your axe! Choose
+            your jam, number of strings, and the number of frets, and I'll let
+            you know!
+          </h3>
 
-        <!-- Style of music drop-down options here. Based on the style of music user chooses, the 
-            number of strings and frets should update to reflect that style. After speaking with TA in CoWork,
-            will need to create A-sync and math filters to filter out number of strings and frets options, which
-            will require further research. May not have time to implement. -->
-        <p>What's your jam?</p>
-        <select id="jam">
-          <!-- Blues/Rock uses 4-, 5-, and 6-string basses and 6- and 12-string guitars. -->
-          <option value="2">Blues/Rock</option>
-          <!-- Metal uses 4-, 5-, and 6-string basses and 6- and 7-string guitars. -->
-          <option value="3">Metal</option>
-          <!-- Jazz uses 4-, 5-, and 6-string basses and 6-string guitars. -->
-          <option value="4">Jazz</option>
-          <!-- Classical music uses 4-string basses and 6-string guitars. -->
-          <option value="1">Classical</option>
-        </select>
+          <!-- Style of music drop-down options here. Based on the style of music user chooses, the 
+                number of strings and frets should update to reflect that style. After speaking with TA in CoWork,
+                will need to create A-sync and math filters to filter out number of strings and frets options, which
+                will require further research. May not have time to implement. -->
+          <p>What's your jam?</p>
+          <select id="jam">
+            <!-- Blues/Rock uses 4-, 5-, and 6-string basses and 6- and 12-string guitars. -->
+            <option value="2">Blues/Rock</option>
+            <!-- Metal uses 4-, 5-, and 6-string basses and 6- and 7-string guitars. -->
+            <option value="3">Metal</option>
+            <!-- Jazz uses 4-, 5-, and 6-string basses and 6-string guitars. -->
+            <option value="4">Jazz</option>
+            <!-- Classical music uses 4-string basses and 6-string guitars. -->
+            <option value="1">Classical</option>
+          </select>
 
-        <!-- Number of strings drop-down options here. -->
-        <p>How many strings are ya rockin' on your axe?</p>
-        <select id="strings">
-          <option value="4">4-String Bass</option>
-          <option value="5">5-String Bass</option>
-          <option value="6">6-String Guitar/Bass</option>
-          <option value="7">7-String Guitar</option>
-          <option value="12">12-String Guitar</option>
-        </select>
+          <!-- Number of strings drop-down options here. -->
+          <p>How many strings are ya rockin' on your axe?</p>
+          <select id="strings">
+            <option value="4">4-String Bass</option>
+            <option value="5">5-String Bass</option>
+            <option value="6">6-String Guitar/Bass</option>
+            <option value="7">7-String Guitar</option>
+            <option value="12">12-String Guitar</option>
+          </select>
 
-        <!-- Number of frets drop-down options here. -->
-        <p>Number of frets:</p>
-        <select id="frets">
-          <option value="19">19 Frets</option>
-          <option value="20">20 Frets</option>
-          <option value="21">21 Frets</option>
-          <option value="22">22 Frets</option>
-          <option value="24">24 Frets</option>
-        </select>
+          <!-- Number of frets drop-down options here. -->
+          <p>Number of frets:</p>
+          <select id="frets">
+            <option value="19">19 Frets</option>
+            <option value="20">20 Frets</option>
+            <option value="21">21 Frets</option>
+            <option value="22">22 Frets</option>
+            <option value="24">24 Frets</option>
+          </select>
 
-        <!-- Add button here. -->
-        <p><button type="button">Rock Me, Baby!</button></p>
+          <!-- Add button here. -->
+          <p><button type="button">Rock Me, Baby!</button></p>
+          <div id="total_notes">
+              <span id="notes">0</span>></span>
+          </div>
+        </div>
       </div>
     </div>
   </body>
