@@ -12,14 +12,14 @@
 //  commented out.
 
 // const inputJam = document.getElementById("jam");
-const calculatebutton = document.getElementById("#btnClick");
-const inputStrings = document.getElementById("#strings");
-const inputFrets = document.getElementById("#frets");
-const displayTotal = document.getElementById("#total_notes");
+const calculatebutton = document.querySelector("#btnClick");
+const inputStrings = document.querySelector("#strings");
+const inputFrets = document.querySelector("#frets");
+const displayTotal = document.querySelector("#total_notes");
 
-// inputJam.addEventListener("change", calculate);
-inputStrings.addEventListener("input", calculate);
-inputFrets.addEventListener("input", calculate);
+// inputJam.addEventListener("input", calculate);
+// inputStrings.addEventListener("input", calculate);
+// inputFrets.addEventListener("input", calculate);
 calculatebutton.addEventListener("click", calculate);
 
 function calculate() {
@@ -41,5 +41,3 @@ function calculate() {
 document.getElementById("btnClick").onclick = function () {
   calculate();
 };
-
-calculate();
